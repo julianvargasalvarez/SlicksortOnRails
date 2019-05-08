@@ -1,3 +1,6 @@
 <div id='main'>
   <app></app>
 </div>
+  <%- @trees.each do |tree| %>
+    <%= tree.count %>
+  <%- end -%>

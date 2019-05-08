@@ -10,6 +10,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'webpacker'
 gem 'ancestry'
+gem 'gon'
 
 gem 'listen', group: :development
 
