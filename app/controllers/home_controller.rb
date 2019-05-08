@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @trees = Slide.roots.map(&:subtree)
-    gon.trees = @trees
+    @trees = Slide.all
+    gon.slides = @trees
   end
 end
