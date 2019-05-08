@@ -22,7 +22,7 @@ const ExampleVue = {
   name: 'Example',
   template: `
     <div class="root">
-      <SortableList v-model="items" axis="xy">
+      <SortableList v-model="items" axis="xy" @input=postNewOrder>
         <SortableItem v-for="(item, index) in items" :index="index" :key="index" :item="item" />
       </SortableList>
     </div>
@@ -33,7 +33,8 @@ const ExampleVue = {
   },
   data() {
     return {
-      items: gon.slides
+      items: gon.slides,
+      postNewOrder: (list) => { console.log(list) }
     };
   }
 };
